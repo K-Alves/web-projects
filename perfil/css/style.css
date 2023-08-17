@@ -696,7 +696,7 @@ header {
         width: 100%;
     }
 }
-@media (min-width: 481px) and (max-width: 770px), (orientation: landscape) {
+@media (min-width: 481px) and (max-width: 770px) and (orientation: landscape) {
     #perfil {
         height: 600px;
     }
@@ -727,7 +727,60 @@ header {
         width: 100%;
     }
 }
+@media (min-width: 771px) and (max-width: 1024px) and (orientation: portrait) {
+    #perfil {
+        height: 700px;
+    }
+    .perfil-container {
+        height: 80%;
+        width: 90%;
+    }
+    #hobbies {
+        height: 800px;
+    }
+    #faculdade {
+        height: 600px;
+    }
 
+    .faculdade-1 {
+        display: none;
+        width: 0%;
+    }
+
+    .faculdade-2 {
+        width: 100%;
+    }
+}
+@media (min-width: 771px) and (max-width: 1024px) and (orientation: landscape) {
+    #perfil {
+        height: 500px;
+    }
+    .perfil-container {
+        height: 80%;
+        width: 90%;
+    }
+    #hobbies {
+        height: 800px;
+    }
+    #faculdade {
+        height: 600px;
+    }
+
+    .faculdade-1 {
+        display: none;
+        width: 0%;
+    }
+
+    .faculdade-2 {
+        width: 100%;
+    }
+}
+@media (min-width: 1025px)  {
+    .perfil-container {
+        height: 60%;
+        width: 70%;
+    }
+}
 @keyframes written_text_name {
     100%{
         color: var(--cor0);

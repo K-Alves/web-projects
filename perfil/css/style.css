@@ -549,30 +549,17 @@ header {
 }
 
 .livros-container {
-    display: flex;
-    align-items: center;
-    justify-content:space-around; 
-
-    height: 80%;
+    height: 700px;
     width: 100%;
 }
 
 .livros-content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-
-    height: 700px;
+    height: 100%;
     width: 100%;
     max-width: 1200px;
 }
 
 .livro {
-    display: flex;
-    flex-direction: column;
-
-    height: 650px;
     max-width: 500px;
 
     background: var(--cor1);

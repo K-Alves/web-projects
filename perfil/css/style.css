@@ -561,6 +561,7 @@ header {
 
 .livro {
     max-width: 500px;
+    max-height: 700px;
 
     background: var(--cor1);
     overflow: hidden;

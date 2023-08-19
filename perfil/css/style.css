@@ -549,7 +549,16 @@ header {
 }
 
 .livros-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
     height: 700px;
+    width: 100%;
+}
+
+.livros-swiper {
+    height: 100%;
     width: 100%;
 }
 
@@ -557,6 +566,11 @@ header {
     height: 100%;
     width: 100%;
     max-width: 1200px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
 }
 
 .livro {
@@ -603,6 +617,32 @@ header {
 .livro-name p {
     margin-top: 10px;
     font-size: 1.5em;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 50px;
+    width: 100%;
+
+    background-color: var(--cor4);
+}
+
+.footer-info p{
+    font-size: 1.5em;
+    text-align: center;
+    color: var(--cor2);
+}
+
+.footer-info p a {
+    text-decoration: none;
+    font-family: var(--fonte2);
+}
+
+.footer-info p a:visited {
+    color: var(--cor2);
 }
 
 
@@ -696,6 +736,39 @@ header {
 
     .faculdade-text p {
         font-size: 1.3em;
+    }
+
+    #livros {
+        height: 650px;
+    }
+
+    .livros-title div h1 {
+        font-size: 5em;
+    }
+
+    .livros-container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        width: 100%;
+    }
+
+    .livros-content {
+        
+    }
+
+    .livro {
+        max-width: 320px;
+        max-height: 450px;
+    }
+
+    .livro-name h1 {
+        font-size: 1.5em;
+    }
+
+    .livro-name p {
+        font-size: 1em;
     }
 }
 @media (max-width: 480px) and (orientation: landscape) {

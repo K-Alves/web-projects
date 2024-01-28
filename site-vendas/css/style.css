@@ -1,0 +1,57 @@
+@import url(global.css);
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Roboto:wght@100;300;400;500;700;900&family=VT323&family=Xanh+Mono&display=swap');
+:root {
+    --font-normal: Verdana, Geneva, Tahoma, sans-serif;
+    --font-titulo: 'Roboto', sans-serif;
+    --font-titulo2: 'VT23', monospace;
+    --font-titulo3: 'Xanh Mono', monospace;
+    --font-cursiva: 'Indie Flower', cursive, serif;
+
+    --cor1: #242582;
+    --cor2: #553D67;
+    --cor3: #F64C72;
+    --cor4: #99738E;
+    --cor5: #2F2FA2;
+}
+
+html, body {
+    font-family: var(--font-normal);
+
+    height: 100vh;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: var(--cor2);
+    color: white;
+}
+
+header div {
+    text-align: center;
+
+    padding: 50px 0px;
+}
+
+header div h1 {
+    font-variant: small-caps;
+    font-family: var(--font-titulo);
+    font-size: 3em;
+}
+
+header div p {
+    font-size: 1.3em;
+}
+
+a.link-padrao {
+    text-decoration: none;
+    font-weight: bold;
+
+    color: white;
+}
+
+a.link-padrao:hover {
+    text-decoration: underline;
+}

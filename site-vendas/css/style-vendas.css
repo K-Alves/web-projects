@@ -1,0 +1,172 @@
+@import url(global.css);
+@import url(style-header.css);
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Roboto:wght@100;300;400;500;700;900&family=VT323&family=Xanh+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Workbench&display=swap');
+:root {
+    --font-normal: Verdana, Geneva, Tahoma, sans-serif;
+    --font-titulo: 'Roboto', sans-serif;
+    --font-titulo2: 'VT23', monospace;
+    --font-titulo3: 'Xanh Mono', monospace;
+    --font-display: 'Workbench', sans-serif;
+    --font-cursiva: 'Indie Flower', cursive, serif;
+
+    --cor1: #242582;
+    --cor2: #553D67;
+    --cor3: #F64C72;
+    --cor4: #99738E;
+    --cor5: #2F2FA2;
+}
+
+html, body {
+    font-family: var(--font-normal);
+    scroll-behavior: smooth;
+    height: 100vh;
+
+    background: url(../img/venda-img-fundo.jpg) center center no-repeat fixed;
+    background-size: cover;
+}
+
+
+header div.menu {
+    position: fixed;
+    width: 100%;
+    font-family: var(--font-titulo2);
+
+    display: flex;
+
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.678), rgba(0, 0, 0, 0.514));
+    box-shadow: 0px 0px 7px black;
+}
+
+header div.menu div.menu-logo {
+    height: 50px;
+    width: 100px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header div.menu img {
+    max-height: 40px;
+}
+
+header div.menu a {
+    color: white;
+
+    text-decoration: none;
+    font-weight: bold;
+    font-family: var(--fonte1);
+    font-size: 1.3em;
+
+    height: 100%;
+
+    padding: 10px;
+
+    transition: all .5s ease;
+}
+
+header div.menu a:hover {
+    background-color: var(--cor3);
+
+    cursor: pointer;
+}
+
+
+header div.menu ul {
+    height: 50px;
+
+    display: flex;
+    align-items: center;
+}
+
+header div.menu ul li {
+    list-style-type: none;
+    padding: 0px 15px;
+
+    width: 100%;
+}
+
+section.produto {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section.produto div.container {
+    width: 60vw;
+    height: 1500px;
+
+    background-color: rgba(231, 224, 224, 0.897);
+
+    display: flex;
+    justify-content: space-around;
+
+    margin: 50px 0px;
+
+    border: 5px solid rgba(0, 0, 0, 0.199);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.438);
+}
+
+section.produto div.container div.img-produto {
+    height: 700px;
+    width: 500px;
+
+    border: 5px solid black;
+    margin-top: 50px;
+}
+
+section.produto div.container div.img-produto img {
+    height: 100%;
+    width: 100%;
+}
+section.produto div.container div.info-produto {
+    width: 500px;
+    margin-top: 60px;
+}
+
+section.produto div.container div.info-produto h1{
+    font-family: var(--font-titulo);
+    font-size: 2em;
+
+    margin-bottom: 50px ;
+}
+section.produto div.container div.info-produto p {
+    font-family: var(--font-normal);
+    font-size: 1.3em;
+    text-align: justify;
+}
+
+section.produto div.container div.info-produto ul li {
+    list-style-position: inside;
+    font-size: 1.3em;
+    font-weight: bold   ;
+    margin: 15px 0px;
+}
+
+section.produto div.container div.info-produto div.links {
+    margin-top: 30px;
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;    
+}
+section.produto div.container div.info-produto div.links a{
+    font-family: var(--font-titulo2);
+    padding: 10px;
+    
+    background-color: var(--cor2);
+    border-radius: 10px;
+
+    text-decoration: none;
+    color: white;
+}
+section.produto div.container div.info-produto div.links a:hover{
+
+    background-color: var(--cor4);
+
+    text-decoration: underline;
+}
+
+
+

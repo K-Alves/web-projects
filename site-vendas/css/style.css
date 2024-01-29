@@ -1,5 +1,4 @@
 @import url(global.css);
-@import url(style-header.css);
 @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Roboto:wght@100;300;400;500;700;900&family=VT323&family=Xanh+Mono&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Workbench&display=swap');
 :root {
@@ -39,6 +38,8 @@ header{
 
 header div.menu {
     position: fixed;
+    width: 100%;
+    font-family: var(--font-titulo2);
 
     display: flex;
 
@@ -58,6 +59,43 @@ header div.menu div.menu-logo {
 header div.menu img {
     max-height: 40px;
 }
+
+header div.menu a {
+    color: white;
+
+    text-decoration: none;
+    font-weight: bold;
+    font-family: var(--fonte1);
+    font-size: 1.3em;
+
+    height: 100%;
+
+    padding: 10px;
+
+    transition: all .5s ease;
+}
+
+header div.menu a:hover {
+    background-color: var(--cor3);
+
+    cursor: pointer;
+}
+
+
+header div.menu ul {
+    height: 50px;
+
+    display: flex;
+    align-items: center;
+}
+
+header div.menu ul li {
+    list-style-type: none;
+    padding: 0px 15px;
+
+    width: 100%;
+}
+
 
 header div.container {
     height: 90vh;
@@ -93,7 +131,7 @@ main section.info-marca{
 }
 
 main section.info-marca div.info-marca-text {
-    background-color: rgba(0, 0, 0, 0.582);
+    background-color: rgba(0, 0, 0, 0.705);
     border-radius: 20px;
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.521);
 

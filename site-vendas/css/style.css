@@ -203,7 +203,7 @@ footer a:hover {
 
 @media (max-width: 1000px) {
     header {
-        background: url(../img/apresentacao-img.jpg) center center no-repeat fixed;
+        background: url(../img/apresentacao-img.jpg) center center no-repeat;
     }
     header div.menu li {
         font-size: .7em;

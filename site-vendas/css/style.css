@@ -1,11 +1,13 @@
 @import url(global.css);
 @import url(style-header.css);
 @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Roboto:wght@100;300;400;500;700;900&family=VT323&family=Xanh+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Workbench&display=swap');
 :root {
     --font-normal: Verdana, Geneva, Tahoma, sans-serif;
     --font-titulo: 'Roboto', sans-serif;
     --font-titulo2: 'VT23', monospace;
     --font-titulo3: 'Xanh Mono', monospace;
+    --font-display: 'Workbench', sans-serif;
     --font-cursiva: 'Indie Flower', cursive, serif;
 
     --cor1: #242582;
@@ -17,20 +19,77 @@
 
 html, body {
     font-family: var(--font-normal);
-
+    scroll-behavior: smooth;
     height: 100vh;
 }
-main section.info-marca div.info-marca-img {
+
+header{
+    background: url(../img/apresentacao-img.jpg) center center no-repeat fixed;
+    background-size: cover;
+
 
     width: 100%;
-    height: 700px;
+    height: 100vh;
+    top: 0;
+    left: 0;
 
-    background: url(../img/info-marca-img.jpg) center center no-repeat fixed;
-    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+
+header div.menu {
+    position: fixed;
+
+    display: flex;
+
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.678), rgba(0, 0, 0, 0.514));
+    box-shadow: 0px 0px 7px black;
+}
+
+header div.menu div.menu-logo {
+    height: 50px;
+    width: 100px;
 
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+header div.menu img {
+    max-height: 40px;
+}
+
+header div.container {
+    height: 90vh;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header div.container h1 {
+    color: white;
+    font-size: 2em;
+    font-family: var(--font-display);
+    font-size: 5em;
+
+    margin: 30px 0px;
+}
+main section.info-marca{
+    border-top: 10px solid rgba(0, 0, 0, 0.952);
+    border-bottom: 10px solid rgba(0, 0, 0, 0.952);
+    background: url(../img/info-marca-img.jpg) center center no-repeat;
+    background-size: cover;
+
+    max-height: 180vh;
+    min-height: 100vh;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 main section.info-marca div.info-marca-text {
@@ -40,8 +99,9 @@ main section.info-marca div.info-marca-text {
 
     color: aliceblue;
 
-    max-width: 800px;
-    min-width: 500px;
+    margin: 20px;
+
+    width: 700px;
     height: 400px;
     
     display: flex;
@@ -51,12 +111,12 @@ main section.info-marca div.info-marca-text {
 }
 
 main section.info-marca div.info-marca-text h1{
-    font-size: 2em;
+    font-size: 3em;
     font-family: var(--font-titulo2);
 }
 
 main section.info-marca div.info-marca-text p{
-    font-size: 1.3em;
+    font-size: 1.5em;
     font-family: var(--font-normal);
 
     text-align: justify;
@@ -65,11 +125,11 @@ main section.info-marca div.info-marca-text p{
 }
 
 main section.vantagem-marca {
-    background-color: var(--cor5);
+    background-color: var(--cor2);
     color: white;
 
     width: 100%;
-    height: 500px;
+    height: 600px;
 
     display: flex;
     flex-direction: column;
@@ -113,4 +173,28 @@ main section.vantagem-marca div.van ul li{
 
     font-size: 1.5em;
     font-family: var(--font-titulo3);
+}
+
+
+footer {
+    height: 50px;
+    width: 100%;
+    background-color: black;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer p {
+    color: wheat;
+}
+
+footer a {
+    color: wheat;
+}
+
+footer a:hover {
+    cursor: pointer;
+    color: var(--cor3);
 }

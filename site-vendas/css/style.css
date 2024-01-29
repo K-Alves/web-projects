@@ -102,7 +102,8 @@ main section.info-marca div.info-marca-text {
     margin: 20px;
 
     width: 700px;
-    height: 400px;
+    min-height: 400px;
+    max-height: 600px;
     
     display: flex;
     align-items: center;
@@ -112,6 +113,7 @@ main section.info-marca div.info-marca-text {
 
 main section.info-marca div.info-marca-text h1{
     font-size: 3em;
+    padding-top: 10px;
     font-family: var(--font-titulo2);
 }
 
@@ -197,4 +199,38 @@ footer a {
 footer a:hover {
     cursor: pointer;
     color: var(--cor3);
+}
+
+@media (max-width: 1000px) {
+    header {
+        background: url(../img/apresentacao-img.jpg) center center no-repeat fixed;
+    }
+    header div.menu li {
+        font-size: .7em;
+    }
+
+    header div.container div h1 {
+        font-size: 3em;
+    }
+
+    section.info-marca {
+        height: 1000px;
+    }
+
+    main section.info-marca div.info-marca-text h1{
+        font-size: 1.5em;
+    }
+
+    main section.info-marca div.info-marca-text p{
+        font-size: 1.1em;
+    }
+
+    .vantagem-marca h1{
+        text-align: center;
+    }
+
+    .vantagem-marca .container .van ul li {
+        font-size: 1.4em;
+    }
+
 }

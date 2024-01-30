@@ -100,7 +100,8 @@ section.produto {
 
 section.produto div.container {
     width: 1200px;
-    height: 1500px;
+    min-height: 1500px;
+    max-height: 3000px;
 
     background-color: rgba(245, 245, 245, 0.842);
 
@@ -149,7 +150,7 @@ section.produto div.container div.info-produto ul li {
 }
 
 section.produto div.container div.info-produto div.links {
-    margin-top: 30px;
+    margin: 30px 0px;
     width: 500px;
     display: flex;
     justify-content: space-between;
